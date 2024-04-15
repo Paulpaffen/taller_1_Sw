@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller TS 1</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        #tv-series-title {
+            background-color: rgb(23, 101, 124);
+            width: 100%;
+        }
+        #series-container {
+            width: 50%;
+            margin-left: 50px;
+            margin-top: 25px;
+        }
+        #series tbody td {
+            background-color: rgb(238, 238, 238);
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Listado de Series</h1>
+    <h1 id="tv-series-title">Tv series</h1>
+    <div class="container" id="series-container">
         <table class="table" id="series">
             <thead>
                 <tr>
@@ -18,6 +32,11 @@
                     <th scope="col">Temporadas</th>
                 </tr>
             </thead>
+            <tfoot>
+                <tr id="promedio">
+                    <td colspan="4"></td>
+                </tr>
+            </tfoot>
         </table>
     </div>
     <script type="module" src="./js/main.js"></script>

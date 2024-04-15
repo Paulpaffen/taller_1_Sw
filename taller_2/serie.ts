@@ -1,4 +1,5 @@
 export class Serie {
+    link: any;
     constructor(
         public id: number,
         public nombre: string,
